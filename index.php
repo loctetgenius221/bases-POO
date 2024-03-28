@@ -32,6 +32,12 @@
             $this->couleur = $couleur;
         }
 
+        // Méthode klaxonner
+        public function klaxonner(){
+
+            var_dump("Klaxon Pinn! Pinn! Pinn!");
+        }
+
 
         // Méthode qui affiche les détails de la voiture
         public function afficherDetails(){
@@ -55,5 +61,8 @@
 
     // Appel à la méthode afficherDétails.
     $voiture1->afficherDetails();
+    
+    //Appel à la méthode klaxon du voiture
+    $voiture1->klaxonner();
 
 ?>
