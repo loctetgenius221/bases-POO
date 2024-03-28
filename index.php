@@ -1,4 +1,9 @@
 <?php
+// Définission de l'interface
+    interface IReparable {
+
+        public function reparer();
+    }
 
 
 // Définition de la classe Vehicule avec la méthode démarrer()
@@ -10,9 +15,8 @@
     }
     
     
-
 //Creation de la classe voiture
-    class Voiture extends Vehicule{
+    class Voiture extends Vehicule implements IReparable{
         
         //
         private $marque;
@@ -109,7 +113,7 @@
     //Appel à la méthode klaxon du voiture
     // $voiture1->klaxonner();
 
-     $voiture1->setAnnee("2019");
-     echo $voiture1->getAnnee();
+    //  $voiture1->setAnnee("2019");
+    //  echo $voiture1->getAnnee();
 
 ?>
