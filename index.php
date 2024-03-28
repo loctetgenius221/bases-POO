@@ -113,9 +113,11 @@
     }
 
     // Création de la classe moto heritière de la classe Vehicule
-    class moto extends Vehicule {
+    class Moto extends Vehicule {
 
-        private $nbr_roue;
+        public $marque;
+        public $modele;
+        public $autonomie;
     }
     
 
@@ -132,7 +134,10 @@
     //  echo $voiture1->getAnnee();
 
     //appel de la methode reparer
-     $voiture1->reparer();
+    //$voiture1->reparer();
+
+    // Création de l'objet moto électique qui est une instance de moto
+    $motoElectrique = new Moto("Tesla", "Model E", "250 km");
 
     
 ?>
