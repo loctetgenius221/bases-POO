@@ -103,11 +103,19 @@
             echo "<br>";
         }
 
+        // Méthode pour reparer la voiture
+
         public function reparer() {
 
             echo "La voiture est en cours de réparation.\n";
         }
 
+    }
+
+    // Création de la classe moto heritière de la classe Vehicule
+    class moto extends Vehicule {
+
+        private $nbr_roue;
     }
     
 
@@ -124,7 +132,7 @@
     //  echo $voiture1->getAnnee();
 
     //appel de la methode reparer
-    // $voiture1->reparer();
+     $voiture1->reparer();
 
     
 ?>
