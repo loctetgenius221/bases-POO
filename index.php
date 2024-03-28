@@ -25,6 +25,8 @@
         private $annee;
         private $couleur;
 
+
+
         // Méthode getMarque pour afficher la marque.
         public function getMarque() {
             return $this->marque;
@@ -101,6 +103,11 @@
             echo "<br>";
         }
 
+        public function reparer() {
+
+            echo "La voiture est en cours de réparation.\n";
+        }
+
     }
     
 
@@ -116,4 +123,8 @@
     //  $voiture1->setAnnee("2019");
     //  echo $voiture1->getAnnee();
 
+    //appel de la methode reparer
+    // $voiture1->reparer();
+
+    
 ?>
